@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>ipdb使用教程</title>
+    <link href="/2024/07/02/ipdb%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/"/>
+    <url>/2024/07/02/ipdb%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</url>
+    
+    <content type="html"><![CDATA[<h1 id="记录ipdb使用教程"><a href="#记录ipdb使用教程" class="headerlink" title="记录ipdb使用教程"></a>记录ipdb使用教程</h1><h2 id="ipdb"><a href="#ipdb" class="headerlink" title="ipdb"></a>ipdb</h2><p>IPython Debugger（简称ipdb）是一个强大的交互式调试工具，它可以帮助你轻松地排查和解决代码中的问题，支持Tab补全，语法高亮。</p><h2 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h2><p>ipdb 是 Python 的第三方库，使用 pip 即可安装</p><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmake">pip <span class="hljs-keyword">install</span> ipdb<br></code></pre></td></tr></table></figure><h2 id="Use"><a href="#Use" class="headerlink" title="Use"></a>Use</h2><p>在断点处添加代码</p><figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs abnf">import ipdb<span class="hljs-comment">; ipdb.set_trace()</span><br></code></pre></td></tr></table></figure><h5 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h5><p><code>c</code>: 继续执行代码，直到遇到下一个断点或程序结束。<br><code>n</code>: 单步执行下一行代码（不会进入函数内部）。<br><code>s</code>: 单步进入下一行代码（如果有函数调用，则进入函数内部）。<br><code>q</code>: 退出调试器并终止程序的执行。<br><code>restart</code>: 重新启动调试器<br><code>l</code>: 查看当前位置附近的代码。<br><code>j &lt;line_number&gt;</code>: 跳过代码片段，直接执行指定行号所在的代码<br><code>p &lt;variable_name&gt;</code>: 打印变量的值<br><code>r</code>: 从当前函数返回<br><code>a</code>: 列出传入函数所有的参数值<br><code>h &lt;command_name&gt;</code>: 查看帮助信息<br><code>w</code>: 查看当前的调用栈。<br><code>u</code>: 向上移动一层调用栈。<br><code>d</code>: 向下移动一层调用栈。<br><code>b &lt;line_number&gt;</code>: 打断点<br><code>cl</code>: 清除断点<br><code>enable</code>: 启用禁用的断点<br><code>disable</code>: 禁用启用的断点  </p><h5 id="进阶命令"><a href="#进阶命令" class="headerlink" title="进阶命令"></a>进阶命令</h5><p><code>b &lt;filename&gt;:&lt;line_number&gt; if &lt;condition&gt;</code>: 条件断点<br><code>-s</code>: 启动某个ipdb自定义脚本</p><h5 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">add</span>(<span class="hljs-params">a, b</span>):<br>    a = a + a<br>    b = b + b<br>    <span class="hljs-keyword">return</span> a + b<br>a = <span class="hljs-number">1</span><br>b = <span class="hljs-number">2</span><br><span class="hljs-keyword">import</span> ipdb; ipdb.set_trace()<br><span class="hljs-built_in">print</span>(a)<br><span class="hljs-built_in">print</span>(b)<br>c = add(a, b)<br><span class="hljs-built_in">print</span>(c)<br></code></pre></td></tr></table></figure><h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p><a href="https://blog.csdn.net/lamanchas/article/details/120836683">Python调试器：ipdb 和pdb</a><br><a href="https://blog.csdn.net/DeepViewInsight/article/details/132913336">深入浅出：IPython Debugger (ipdb)详解</a></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>tools</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>PowerShell执行策略</title>
     <link href="/2024/06/29/PowerShell%E6%89%A7%E8%A1%8C%E7%AD%96%E7%95%A5/"/>
     <url>/2024/06/29/PowerShell%E6%89%A7%E8%A1%8C%E7%AD%96%E7%95%A5/</url>
@@ -13,7 +32,7 @@
     
     <categories>
       
-      <category>Tools</category>
+      <category>tools</category>
       
     </categories>
     

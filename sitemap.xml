@@ -2,18 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://example.com/2024/06/29/PowerShell%E6%89%A7%E8%A1%8C%E7%AD%96%E7%95%A5/</loc>
+    <loc>http://example.com/2024/07/02/ipdb%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</loc>
     
-    <lastmod>2024-06-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/2024/06/29/hello-world/</loc>
-    
-    <lastmod>2024-06-29</lastmod>
+    <lastmod>2024-07-02</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -21,6 +12,24 @@
   
   <url>
     <loc>http://example.com/2024/06/29/nvm%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</loc>
+    
+    <lastmod>2024-07-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/2024/06/29/PowerShell%E6%89%A7%E8%A1%8C%E7%AD%96%E7%95%A5/</loc>
+    
+    <lastmod>2024-07-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/2024/06/29/hello-world/</loc>
     
     <lastmod>2024-06-29</lastmod>
     
@@ -54,13 +63,6 @@
   </url>
   
 
-  
-  <url>
-    <loc>http://example.com/categories/Tools/</loc>
-    <lastmod>2024-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
   
   <url>
     <loc>http://example.com/categories/tools/</loc>

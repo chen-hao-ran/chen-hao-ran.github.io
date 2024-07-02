@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-06-29T04:24:58.780Z</updated>
+  <updated>2024-07-02T10:30:51.315Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,33 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>ipdb使用教程</title>
+    <link href="http://example.com/2024/07/02/ipdb%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/"/>
+    <id>http://example.com/2024/07/02/ipdb%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</id>
+    <published>2024-07-02T09:50:00.000Z</published>
+    <updated>2024-07-02T10:30:51.315Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="记录ipdb使用教程"><a href="#记录ipdb使用教程" class="headerlink" title="记录ipdb使用教程"></a>记录ipdb使用教程</h1><h2 id="ipdb"><a href="#ipdb" class="headerlink" title="ipdb"></a>ipdb</h2><p>IPython Debugger（简称ipdb）是一个强大的交互式调试工具，它可以帮助你轻松地排查和解决代码中的问题，支持Tab补全，语法高亮。</p><h2 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h2><p>ipdb 是 Python 的第三方库，使用 pip 即可安装</p><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmake">pip <span class="hljs-keyword">install</span> ipdb<br></code></pre></td></tr></table></figure><h2 id="Use"><a href="#Use" class="headerlink" title="Use"></a>Use</h2><p>在断点处添加代码</p><figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs abnf">import ipdb<span class="hljs-comment">; ipdb.set_trace()</span><br></code></pre></td></tr></table></figure><h5 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h5><p><code>c</code>: 继续执行代码，直到遇到下一个断点或程序结束。<br><code>n</code>: 单步执行下一行代码（不会进入函数内部）。<br><code>s</code>: 单步进入下一行代码（如果有函数调用，则进入函数内部）。<br><code>q</code>: 退出调试器并终止程序的执行。<br><code>restart</code>: 重新启动调试器<br><code>l</code>: 查看当前位置附近的代码。<br><code>j &lt;line_number&gt;</code>: 跳过代码片段，直接执行指定行号所在的代码<br><code>p &lt;variable_name&gt;</code>: 打印变量的值<br><code>r</code>: 从当前函数返回<br><code>a</code>: 列出传入函数所有的参数值<br><code>h &lt;command_name&gt;</code>: 查看帮助信息<br><code>w</code>: 查看当前的调用栈。<br><code>u</code>: 向上移动一层调用栈。<br><code>d</code>: 向下移动一层调用栈。<br><code>b &lt;line_number&gt;</code>: 打断点<br><code>cl</code>: 清除断点<br><code>enable</code>: 启用禁用的断点<br><code>disable</code>: 禁用启用的断点  </p><h5 id="进阶命令"><a href="#进阶命令" class="headerlink" title="进阶命令"></a>进阶命令</h5><p><code>b &lt;filename&gt;:&lt;line_number&gt; if &lt;condition&gt;</code>: 条件断点<br><code>-s</code>: 启动某个ipdb自定义脚本</p><h5 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">add</span>(<span class="hljs-params">a, b</span>):<br>    a = a + a<br>    b = b + b<br>    <span class="hljs-keyword">return</span> a + b<br>a = <span class="hljs-number">1</span><br>b = <span class="hljs-number">2</span><br><span class="hljs-keyword">import</span> ipdb; ipdb.set_trace()<br><span class="hljs-built_in">print</span>(a)<br><span class="hljs-built_in">print</span>(b)<br>c = add(a, b)<br><span class="hljs-built_in">print</span>(c)<br></code></pre></td></tr></table></figure><h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p><a href="https://blog.csdn.net/lamanchas/article/details/120836683">Python调试器：ipdb 和pdb</a><br><a href="https://blog.csdn.net/DeepViewInsight/article/details/132913336">深入浅出：IPython Debugger (ipdb)详解</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;记录ipdb使用教程&quot;&gt;&lt;a href=&quot;#记录ipdb使用教程&quot; class=&quot;headerlink&quot; title=&quot;记录ipdb使用教程&quot;&gt;&lt;/a&gt;记录ipdb使用教程&lt;/h1&gt;&lt;h2 id=&quot;ipdb&quot;&gt;&lt;a href=&quot;#ipdb&quot; class=&quot;head</summary>
+      
+    
+    
+    
+    <category term="tools" scheme="http://example.com/categories/tools/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>PowerShell执行策略</title>
     <link href="http://example.com/2024/06/29/PowerShell%E6%89%A7%E8%A1%8C%E7%AD%96%E7%95%A5/"/>
     <id>http://example.com/2024/06/29/PowerShell%E6%89%A7%E8%A1%8C%E7%AD%96%E7%95%A5/</id>
     <published>2024-06-29T04:22:00.000Z</published>
-    <updated>2024-06-29T04:24:58.780Z</updated>
+    <updated>2024-07-02T10:27:52.296Z</updated>
     
     <content type="html"><![CDATA[<h2 id="about-Execution-Policies"><a href="#about-Execution-Policies" class="headerlink" title="about_Execution_Policies"></a>about_Execution_Policies</h2><p>在PowerShell中运行脚本时可能会遇到脚本被禁止问题，按照<a href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.4">PowerShell官方说明</a>能够解决</p>]]></content>
     
@@ -33,7 +55,7 @@
     
     
     
-    <category term="Tools" scheme="http://example.com/categories/Tools/"/>
+    <category term="tools" scheme="http://example.com/categories/tools/"/>
     
     
   </entry>
@@ -63,7 +85,7 @@
     <link href="http://example.com/2024/06/29/nvm%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/"/>
     <id>http://example.com/2024/06/29/nvm%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</id>
     <published>2024-06-29T03:13:00.000Z</published>
-    <updated>2024-06-29T04:09:39.920Z</updated>
+    <updated>2024-07-02T10:29:58.149Z</updated>
     
     <content type="html"><![CDATA[<h1 id="记录配置nvm的流程"><a href="#记录配置nvm的流程" class="headerlink" title="记录配置nvm的流程"></a>记录配置nvm的流程</h1><h2 id="nvm"><a href="#nvm" class="headerlink" title="nvm"></a>nvm</h2><p>解决不同应用程序需要不同Nodejs版本的问题</p><h2 id="Download"><a href="#Download" class="headerlink" title="Download"></a>Download</h2><p><a href="https://github.com/coreybutler/nvm-windows/releases">github下载地址</a></p><h2 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h2><p>首先现在电脑中原先的Nodejs，然后按照默认安装流程安装nvm<br>安装完成后检查版本号，若成功输出版本号说明安装成功</p><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">nvm v</span><br></code></pre></td></tr></table></figure><h2 id="Use"><a href="#Use" class="headerlink" title="Use"></a>Use</h2><p>查看不同的Nodejs版本号</p><figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs arduino">nvm list available <br></code></pre></td></tr></table></figure><p>安装对应的版本</p><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs applescript">nvm install &lt;<span class="hljs-built_in">version</span>&gt;<br></code></pre></td></tr></table></figure><p>查看已经安装的Nodejs版本</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">nvm <span class="hljs-built_in">ls</span> <br></code></pre></td></tr></table></figure><p>切换到指定版本号</p><figure class="highlight openscad"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs openscad">nvm <span class="hljs-meta"><span class="hljs-keyword">use</span> &lt;version&gt;</span><br></code></pre></td></tr></table></figure><p>检查是否安装完成</p><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs crmsh"><span class="hljs-keyword">node</span> <span class="hljs-title">-v</span><br></code></pre></td></tr></table></figure><h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p><a href="https://cloud.tencent.com/developer/article/2186393">使用nvm使Windows电脑支持多个Nodejs版本</a></p>]]></content>
     
