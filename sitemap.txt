@@ -6,4 +6,5 @@ http://example.com/2024/06/29/hello-world/
 http://example.com/about/index.html
 http://example.com/
 http://example.com/tags/%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/
+http://example.com/tags/CG/
 http://example.com/categories/tools/

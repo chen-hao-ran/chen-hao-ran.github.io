@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-07-19T09:49:18.771Z</updated>
+  <updated>2024-07-19T09:53:29.156Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -20,8 +20,8 @@
     <title>罗德里格斯公式证明（Games101）</title>
     <link href="http://example.com/2024/07/19/%E7%BD%97%E5%BE%B7%E9%87%8C%E6%A0%BC%E6%96%AF%E5%85%AC%E5%BC%8F%E8%AF%81%E6%98%8E%EF%BC%88Games101%EF%BC%89/"/>
     <id>http://example.com/2024/07/19/%E7%BD%97%E5%BE%B7%E9%87%8C%E6%A0%BC%E6%96%AF%E5%85%AC%E5%BC%8F%E8%AF%81%E6%98%8E%EF%BC%88Games101%EF%BC%89/</id>
-    <published>2024-07-19T06:48:53.000Z</published>
-    <updated>2024-07-19T09:49:18.771Z</updated>
+    <published>2024-07-19T06:48:00.000Z</published>
+    <updated>2024-07-19T09:53:29.156Z</updated>
     
     <content type="html"><![CDATA[<h2 id="rodriguez">Rodriguez</h2><p>罗德里格斯公式（Rodriguez）是计算机图形学中表示旋转矩阵的一种方式，下面来证明公式的正确性。<span class="math display">\[R(n, \alpha) = cos\alpha I + (1 - cos\alpha)nn^T + sin\alpha\begin{pmatrix}0 &amp; -n_z &amp; n_y \\n_z &amp; 0 &amp; -n_x \\-n_y  &amp; n_x &amp; 0 \\\end{pmatrix}\]</span></p><h2 id="prove">Prove</h2><h3 id="target">target</h3><p>设旋转向量为<span class="math inline">\(s\)</span>，旋转轴为<spanclass="math inline">\(a, b, c\)</span> <span class="math display">\[R(n, \alpha)s = s_p + s_v^{Rot}\]</span> 其中<span class="math inline">\(s_p\)</span>和<spanclass="math inline">\(s_v\)</span>分别为<spanclass="math inline">\(s\)</span>平行和垂直于旋转轴的分量，<spanclass="math inline">\(s_v^{Rot}\)</span>为旋转后的<spanclass="math inline">\(s\)</span>在<spanclass="math inline">\(bc\)</span>面上的分量</p><h3 id="step1">step1</h3><p>设<span class="math inline">\(n\)</span>为<spanclass="math inline">\(a\)</span>，<spanclass="math inline">\(\alpha\)</span>为<spanclass="math inline">\(\theta\)</span><br />那么<br /><span class="math display">\[s_p = proj(s, a) = a \cdot (s \cdot a) = a \cdot (a^T \cdot s) = a \cdota^T \cdot s\]</span><br /><span class="math display">\[s_v = s - s_p = s - a \cdot a^T \cdot s\]</span> <span class="math display">\[b = \frac{s_v}{\|s_v\|}\]</span></p><h3 id="step2">step2</h3><p><span class="math display">\[c = a \times b = \frac{a \times s_v}{\|s_v\|} = \frac{a \timess}{\|s_v\|}\]</span></p><h3 id="step3">step3</h3><p><span class="math display">\[\begin{aligned}s_v^{Rot} &amp;= \|s_v\|cos\theta b + \|s_v\|sin\theta c \\&amp;= cos\theta s - cos\theta a \cdot a^T \cdot s + sin\theta(a \timess)\end{aligned}\]</span></p><h3 id="step-4">step 4</h3><p><span class="math display">\[\begin{aligned}R(a, \theta)s &amp;= s_p + s_v^{Rot} \\&amp;= cos\theta s + (1 - cos\theta)a \cdot a^T \cdot s + sin\theta\begin{pmatrix}0 &amp; -n_z &amp; n_y \\n_z &amp; 0 &amp; -n_x \\-n_y  &amp; n_x &amp; 0 \\\end{pmatrix}s\end{aligned}\]</span> 消去<span class="math inline">\(s\)</span>后得 <spanclass="math display">\[R(a, \theta) = cos\theta + (1 - cos\theta)a \cdot a^T \cdot + sin\theta\begin{pmatrix}0 &amp; -n_z &amp; n_y \\n_z &amp; 0 &amp; -n_x \\-n_y  &amp; n_x &amp; 0 \\\end{pmatrix}\]</span></p><h2 id="reference">Reference</h2><p><ahref="https://blog.csdn.net/vermouth_1412/article/details/129636443">罗德里格斯公式证明（Games101）</a></p>]]></content>
     
@@ -36,6 +36,8 @@ R(n, &#92;alpha) = cos&#92;</summary>
     
     
     
+    
+    <category term="CG" scheme="http://example.com/tags/CG/"/>
     
   </entry>
   
